@@ -7,10 +7,10 @@ A native macOS LDAP browser and editor built with Tauri. Connect to Active Direc
 It may can:
 - break your Heart
 - break your Bankaccount
-- break your merriage
+- break your Marriage
 - break your Directory
 
-Consider beeing warnded. I am at no Level an experianced Software Author and I don't know what I'm doing!
+Consider yourself warned. I am at no Level an experianced Software Engineer and I don't know what I'm doing!
 
 ## Features
 
