@@ -231,4 +231,4 @@ cd src-tauri && cargo audit  # requires cargo-audit
 
 ## License
 
-ISC
+GPL v3
