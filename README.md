@@ -2,6 +2,9 @@
 
 A native macOS LDAP browser and editor built with Tauri. Connect to Active Directory, OpenLDAP, or 389 Directory Server, browse the directory tree, search entries, and edit attributes — all from a clean, dark-mode-aware interface.
 
+![Screenshot of RootNode](https://raw.githubusercontent.com/bkix/RootNode/refs/heads/main/assets/RootNode-Screenshot.png)
+
+
 # WARNING: This has been 100% Vibecoded with Claude
 
 It may can:
@@ -14,6 +17,7 @@ Consider yourself warned. I am at no Level an experianced Software Engineer and 
 
 ## Features
 
+- MacOS only 'till now. Needs some minor(?) work for Linux and Windows.
 - Multi-server connections with saved profiles
 - Simple bind and certificate (SASL EXTERNAL) authentication
 - Password storage in macOS Keychain
