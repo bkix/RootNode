@@ -1,0 +1,161 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
+}
+
+.scrollArea {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.error {
+  padding: 12px 16px;
+  font-size: 13px;
+  color: #dc2626;
+  background: #fef2f2;
+}
+
+.entry {
+  padding: 10px 16px;
+  border-bottom: 1px solid #E5E7EB;
+  cursor: pointer;
+  min-height: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: background 100ms;
+}
+
+:global(html:not(.light)) .entry {
+  border-color: #3F3F46;
+}
+
+.entry:hover {
+  background: #F3F4F6;
+}
+
+:global(html:not(.light)) .entry:hover {
+  background: #18181B;
+}
+
+.entrySelected {
+  background: #EBF0FF;
+}
+
+:global(html:not(.light)) .entrySelected {
+  background: #3730A3;
+}
+
+.entryLabel {
+  font-size: 14px;
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.folderIcon {
+  color: #eab308;
+  font-size: 14px;
+}
+
+.entryParent {
+  font-size: 12px;
+  color: #71717A;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-top: 2px;
+}
+
+:global(html:not(.light)) .entryParent {
+  color: #A1A1AA;
+}
+
+.sentinel {
+  height: 4px;
+}
+
+.loadingText {
+  padding: 20px 16px;
+  font-size: 13px;
+  color: #A1A1AA;
+  text-align: center;
+}
+
+.loadingMore {
+  padding: 12px 0;
+  font-size: 13px;
+  color: #A1A1AA;
+  text-align: center;
+}
+
+/* Status bar at bottom */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 16px;
+  border-top: 1px solid #E5E7EB;
+  background: #F8F9FA;
+  flex-shrink: 0;
+  order: 1;
+}
+
+:global(html:not(.light)) .header {
+  border-color: #3F3F46;
+  background: #18181B;
+}
+
+.status {
+  font-size: 13px;
+  color: #71717A;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+:global(html:not(.light)) .status {
+  color: #A1A1AA;
+}
+
+.spinner {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid #0F62FE;
+  border-top-color: transparent;
+  animation: spin 1s linear infinite;
+}
+:global(html:not(.light)) .spinner {
+  border-color: #6366F1;
+  border-top-color: transparent;
+}
+
+.newBtn {
+  font-size: 13px;
+  color: #0F62FE;
+  background: none;
+  border: 1px solid #D1D5DB;
+  border-radius: 6px;
+  padding: 4px 12px;
+  cursor: pointer;
+  transition: background 100ms;
+}
+:global(html:not(.light)) .newBtn {
+  color: #A5B4FC;
+  border-color: #3F3F46;
+}
+:global(html:not(.light)) .newBtn:hover {
+  background: #3730A3;
+}
+
+.newBtn:hover {
+  background: #EBF0FF;
+}

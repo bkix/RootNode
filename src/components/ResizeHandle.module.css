@@ -1,0 +1,26 @@
+.handle {
+  flex-shrink: 0;
+  user-select: none;
+}
+
+.horizontal {
+  width: 4px;
+  cursor: col-resize;
+}
+
+.horizontal:hover {
+  background: rgba(15, 98, 254, 0.3);
+}
+
+.vertical {
+  height: 4px;
+  cursor: row-resize;
+}
+
+.vertical:hover {
+  background: rgba(15, 98, 254, 0.3);
+}
+
+.dragging {
+  background: rgba(15, 98, 254, 0.5);
+}

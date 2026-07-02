@@ -1,0 +1,147 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+  min-width: 0;
+}
+
+.input {
+  width: 100%;
+  border: 1px solid #9CA3AF;
+  border-radius: 8px;
+  padding: 8px 12px 8px 36px;
+  font-size: 14px;
+  background: #fff;
+  color: #27272A;
+  outline: none;
+  height: 40px;
+  transition: border-color 150ms, box-shadow 150ms;
+}
+
+.input:focus {
+  border-color: #0F62FE;
+  box-shadow: 0 0 0 2px rgba(15, 98, 254, 0.15);
+  background: #fff;
+}
+
+.input:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+:global(html:not(.light)) .input {
+  border-color: #71717A;
+  background: #3F3F46;
+  color: #E4E4E7;
+}
+:global(html:not(.light)) .input:focus {
+  border-color: #0F62FE;
+  background: #18181B;
+}
+
+.inputWrap {
+  flex: 1;
+  position: relative;
+  min-width: 0;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #A1A1AA;
+  font-size: 14px;
+  pointer-events: none;
+}
+
+.select {
+  border: 1px solid #D1D5DB;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 13px;
+  background: #fff;
+  color: #27272A;
+  height: 40px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+:global(html:not(.light)) .select {
+  border-color: #52525B;
+  background: #3F3F46;
+  color: #E4E4E7;
+}
+
+.goBtn {
+  padding: 8px 20px;
+  background: #0F62FE;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  height: 40px;
+  flex-shrink: 0;
+  box-shadow: 0 1px 3px rgba(15, 98, 254, 0.3);
+  transition: background 150ms, transform 100ms;
+}
+
+.goBtn:hover {
+  background: #0353E9;
+}
+
+.goBtn:active {
+  transform: scale(0.97);
+}
+
+:global(html:not(.light)) .goBtn {
+  background: #6366F1;
+  box-shadow: 0 1px 3px rgba(99, 102, 241, 0.4);
+}
+:global(html:not(.light)) .goBtn:hover {
+  background: #4F46E5;
+}
+
+.goBtn:disabled {
+  opacity: 0.5;
+  cursor: default;
+  transform: none;
+}
+
+.treeBtn {
+  padding: 8px 12px;
+  border: 1px solid #D1D5DB;
+  border-radius: 8px;
+  font-size: 13px;
+  background: #fff;
+  cursor: pointer;
+  height: 40px;
+  transition: background 100ms;
+}
+
+:global(html:not(.light)) .treeBtn {
+  border-color: #52525B;
+  background: #3F3F46;
+}
+
+.treeBtn:hover {
+  background: #F3F4F6;
+}
+:global(html:not(.light)) .treeBtn:hover {
+  background: #52525B;
+}
+
+.treeBtnActive {
+  background: #EBF0FF;
+  border-color: #0F62FE;
+  color: #0F62FE;
+}
+
+:global(html:not(.light)) .treeBtnActive {
+  background: #3730A3;
+  border-color: #6366F1;
+  color: #A5B4FC;
+}

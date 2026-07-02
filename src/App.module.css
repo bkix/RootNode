@@ -1,0 +1,278 @@
+.root {
+  display: flex;
+  height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+  font-size: 14px;
+  overflow: hidden;
+  background: #fff;
+  color: #27272A;
+}
+:global(html:not(.light)) .root {
+  background: #27272A;
+  color: #E4E4E7;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  overflow: hidden;
+}
+:global(html:not(.light)) .main {
+  background: #27272A;
+}
+
+.topBar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 16px;
+  border-bottom: 1px solid #E5E7EB;
+  flex-shrink: 0;
+  height: 56px;
+}
+:global(html:not(.light)) .topBar {
+  border-color: #3F3F46;
+  background: #18181B;
+}
+
+.searchLabel {
+  font-size: 13px;
+  font-weight: 500;
+  white-space: nowrap;
+  color: #71717A;
+}
+:global(html:not(.light)) .searchLabel {
+  color: #A1A1AA;
+}
+
+.progressBar {
+  position: absolute;
+  top: 56px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #E4E4E7;
+  overflow: hidden;
+  z-index: 10;
+}
+:global(html:not(.light)) .progressBar {
+  background: #18181B;
+}
+
+.progressInner {
+  height: 100%;
+  width: 40%;
+  background: #0F62FE;
+  animation: progress 1.2s ease-in-out infinite;
+}
+:global(html:not(.light)) .progressInner {
+  background: #6366F1;
+}
+
+.contentArea {
+  display: flex;
+  flex: 1;
+  min-height: 0;
+  min-width: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.browseColumn {
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #E5E7EB;
+  flex-shrink: 0;
+  min-height: 0;
+}
+:global(html:not(.light)) .browseColumn {
+  border-color: #3F3F46;
+}
+
+.treeSection {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.resultsSection {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  flex: 1;
+  border-top: 1px solid #E5E7EB;
+}
+:global(html:not(.light)) .resultsSection {
+  border-color: #3F3F46;
+}
+
+.treePlaceholder {
+  border-right: 1px solid #E5E7EB;
+  background: #fff;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  color: #A1A1AA;
+  padding: 0 16px;
+  text-align: center;
+}
+:global(html:not(.light)) .treePlaceholder {
+  background: #27272A;
+  border-color: #3F3F46;
+}
+
+.detailArea {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  min-width: 0;
+  overflow: hidden;
+}
+:global(html:not(.light)) .detailArea {
+  background: #1E1E24;
+}
+
+.placeholder {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #A1A1AA;
+  font-size: 14px;
+  gap: 6px;
+}
+
+.placeholderSub {
+  font-size: 13px;
+  color: #A1A1AA;
+}
+
+.emptyState {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #A1A1AA;
+}
+
+.emptyIcon {
+  width: 64px;
+  height: 64px;
+  opacity: 0.3;
+  margin-bottom: 16px;
+}
+
+.emptyText {
+  font-size: 14px;
+}
+
+.connectionError {
+  text-align: center;
+  padding: 0 24px;
+}
+
+.connectionErrorTitle {
+  color: #ef4444;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.connectionErrorMsg {
+  font-size: 13px;
+  color: #f87171;
+}
+
+/* Unsaved changes modal */
+.modalOverlay {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.modalCard {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1), 0 8px 10px -6px rgba(0,0,0,0.1);
+  padding: 24px;
+  max-width: 24rem;
+  width: 100%;
+  margin: 0 16px;
+}
+:global(html:not(.light)) .modalCard {
+  background: #18181B;
+}
+
+.modalText {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.modalActions {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+}
+
+.btnCancel {
+  padding: 8px 16px;
+  font-size: 13px;
+  border: 1px solid #A1A1AA;
+  border-radius: 6px;
+}
+.btnCancel:hover {
+  background: #f9fafb;
+}
+:global(html:not(.light)) .btnCancel {
+  border-color: #52525B;
+}
+:global(html:not(.light)) .btnCancel:hover {
+  background: #3F3F46;
+}
+
+.btnDiscard {
+  padding: 8px 16px;
+  font-size: 13px;
+  border: 1px solid #fca5a5;
+  color: #dc2626;
+  border-radius: 6px;
+}
+.btnDiscard:hover {
+  background: #fef2f2;
+}
+:global(html:not(.light)) .btnDiscard {
+  color: #f87171;
+}
+:global(html:not(.light)) .btnDiscard:hover {
+  background: rgba(127, 29, 29, 0.3);
+}
+
+.btnSave {
+  padding: 8px 16px;
+  font-size: 13px;
+  background: #0F62FE;
+  color: #fff;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(15, 98, 254, 0.3);
+}
+.btnSave:hover {
+  background: #0353E9;
+}
+:global(html:not(.light)) .btnSave {
+  background: #6366F1;
+  box-shadow: 0 1px 3px rgba(99, 102, 241, 0.4);
+}
+:global(html:not(.light)) .btnSave:hover {
+  background: #4F46E5;
+}

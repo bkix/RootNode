@@ -1,0 +1,227 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  background: #F8F9FA;
+  border-right: 1px solid #E5E7EB;
+  flex-shrink: 0;
+}
+:global(html:not(.light)) .container {
+  background: #18181B;
+  border-right-color: #3F3F46;
+}
+
+.header {
+  padding: 12px 16px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #71717A;
+  border-bottom: 1px solid #E5E7EB;
+}
+:global(html:not(.light)) .header {
+  color: #A1A1AA;
+  border-bottom-color: #3F3F46;
+}
+
+.list {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 16px;
+  cursor: pointer;
+  min-height: 40px;
+  transition: background 100ms;
+}
+.item:hover {
+  background: #ECEEF0;
+}
+:global(html:not(.light)) .item:hover {
+  background: #3F3F46;
+}
+
+.itemActive {
+  background: #EBF0FF;
+  border-left: 3px solid #0F62FE;
+  padding-left: 13px;
+}
+:global(html:not(.light)) .itemActive {
+  background: #3730A3;
+  border-left-color: #6366F1;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  background: #A1A1AA;
+}
+.dotConnected {
+  background: #10B981;
+  box-shadow: 0 0 4px rgba(16, 185, 129, 0.4);
+}
+:global(html:not(.light)) .dotConnected {
+  background: #34D399;
+  box-shadow: 0 0 6px rgba(52, 211, 153, 0.7);
+}
+
+.itemName {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.connectBtn {
+  margin-left: auto;
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 6px;
+  flex-shrink: 0;
+  border: 1px solid #0F62FE;
+  color: #0F62FE;
+  transition: background 100ms;
+}
+:global(html:not(.light)) .connectBtn {
+  border-color: #6366F1;
+  color: #A5B4FC;
+}
+.connectBtn:hover {
+  background: #EBF0FF;
+}
+:global(html:not(.light)) .connectBtn:hover {
+  background: #3730A3;
+}
+
+.disconnectBtn {
+  margin-left: auto;
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 6px;
+  flex-shrink: 0;
+  border: 1px solid #A1A1AA;
+  color: #71717A;
+  transition: background 100ms, color 100ms;
+}
+:global(html:not(.light)) .disconnectBtn {
+  border-color: #52525B;
+  color: #A1A1AA;
+}
+.disconnectBtn:hover {
+  background: #fef2f2;
+  color: #dc2626;
+  border-color: #fca5a5;
+}
+:global(html:not(.light)) .disconnectBtn:hover {
+  background: #450a0a;
+  color: #dc2626;
+}
+
+.footer {
+  border-top: 1px solid #E5E7EB;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+:global(html:not(.light)) .footer {
+  border-top-color: #3F3F46;
+}
+
+.addBtn {
+  width: 100%;
+  font-size: 13px;
+  padding: 8px 0;
+  color: #0F62FE;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: background 100ms;
+}
+:global(html:not(.light)) .addBtn {
+  color: #A5B4FC;
+}
+.addBtn:hover {
+  background: #EBF0FF;
+}
+:global(html:not(.light)) .addBtn:hover {
+  background: #3730A3;
+}
+
+.themeBtn {
+  width: 100%;
+  font-size: 12px;
+  padding: 6px 0;
+  color: #71717A;
+  border-radius: 6px;
+  transition: background 100ms;
+}
+:global(html:not(.light)) .themeBtn {
+  color: #A1A1AA;
+}
+.themeBtn:hover {
+  background: #ECEEF0;
+}
+:global(html:not(.light)) .themeBtn:hover {
+  background: #3F3F46;
+}
+
+.tooltip {
+  position: fixed;
+  z-index: 50;
+  padding: 6px 10px;
+  border-radius: 6px;
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+  border: 1px solid #E5E7EB;
+  background: #fff;
+  pointer-events: none;
+}
+:global(html:not(.light)) .tooltip {
+  border-color: #52525B;
+  background: #18181B;
+}
+
+.badgeAd {
+  font-size: 11px;
+  font-weight: 500;
+  padding: 2px 8px;
+  border-radius: 4px;
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+:global(html:not(.light)) .badgeAd {
+  background: #3730A3;
+  color: #93c5fd;
+}
+
+.badgeOpenldap {
+  font-size: 11px;
+  font-weight: 500;
+  padding: 2px 8px;
+  border-radius: 4px;
+  background: #dcfce7;
+  color: #15803d;
+}
+:global(html:not(.light)) .badgeOpenldap {
+  background: #14532d;
+  color: #86efac;
+}
+
+.badgeUnknown {
+  font-size: 11px;
+  font-weight: 500;
+  padding: 2px 8px;
+  border-radius: 4px;
+  background: #E4E4E7;
+  color: #52525B;
+}
+:global(html:not(.light)) .badgeUnknown {
+  background: #3F3F46;
+  color: #A1A1AA;
+}

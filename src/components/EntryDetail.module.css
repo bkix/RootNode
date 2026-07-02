@@ -1,0 +1,299 @@
+.wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.topBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 16px;
+  padding-bottom: 8px;
+  flex-shrink: 0;
+  min-width: 0;
+}
+
+.titleArea {
+  min-width: 0;
+  flex: 1;
+}
+
+.cn {
+  font-size: 15px;
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.parent {
+  font-size: 13px;
+  color: #71717A;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+:global(html:not(.light)) .parent {
+  color: #A1A1AA;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+.saveBtn {
+  padding: 4px 12px;
+  font-size: 13px;
+  background: #0F62FE;
+  color: #fff;
+  border-radius: 4px;
+}
+.saveBtn:hover {
+  background: #0353E9;
+}
+.saveBtn:disabled {
+  opacity: 0.5;
+}
+
+.deleteBtn {
+  padding: 4px 12px;
+  font-size: 13px;
+  border: 1px solid #fca5a5;
+  color: #dc2626;
+  border-radius: 4px;
+}
+.deleteBtn:hover {
+  background: #fef2f2;
+}
+
+.errorBar {
+  margin: 0 16px 8px;
+  padding: 6px 8px;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 4px;
+  font-size: 13px;
+  color: #b91c1c;
+  flex-shrink: 0;
+  word-break: break-all;
+}
+
+.scrollArea {
+  flex: 1;
+  overflow-y: auto;
+  margin: 0 16px 16px;
+}
+
+.stickyHeader {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: #f9fafb;
+  border-bottom: 1px solid #e5e7eb;
+}
+:global(html:not(.light)) .stickyHeader {
+  background: #18181B;
+  border-bottom-color: #3F3F46;
+}
+
+.headerRow {
+  display: flex;
+}
+
+.headerCell {
+  flex-shrink: 0;
+  padding: 6px 8px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #71717A;
+}
+:global(html:not(.light)) .headerCell {
+  color: #A1A1AA;
+}
+
+.headerCellFlex {
+  flex: 1;
+  padding: 6px 8px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #71717A;
+  display: flex;
+  justify-content: space-between;
+}
+:global(html:not(.light)) .headerCellFlex {
+  color: #A1A1AA;
+}
+
+.addAttrBtn {
+  font-size: 10px;
+  color: #0F62FE;
+}
+.addAttrBtn:hover {
+  color: #1d4ed8;
+}
+
+.addAttrRow {
+  display: flex;
+  border-top: 1px solid #e5e7eb;
+  background: rgba(239, 246, 255, 0.5);
+}
+:global(html:not(.light)) .addAttrRow {
+  border-top-color: #3F3F46;
+  background: rgba(30, 58, 138, 0.2);
+}
+
+.addAttrInput {
+  border: 1px dashed #A1A1AA;
+  border-radius: 4px;
+  padding: 2px 4px;
+  font-size: 13px;
+  width: 100%;
+}
+.addAttrInput::placeholder {
+  color: #A1A1AA;
+}
+
+.dropdown {
+  position: absolute;
+  z-index: 20;
+  left: 8px;
+  right: 8px;
+  top: 100%;
+  margin-top: 2px;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+  max-height: 192px;
+  overflow-y: auto;
+}
+:global(html:not(.light)) .dropdown {
+  background: #18181B;
+  border-color: #52525B;
+}
+
+.dropdownItem {
+  padding: 4px 8px;
+  font-size: 13px;
+  cursor: pointer;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.dropdownItem:hover {
+  background: #eff6ff;
+}
+
+.groupLabel {
+  padding: 4px 8px;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #A1A1AA;
+  background: #f9fafb;
+  border-bottom: 1px solid #e5e7eb;
+  margin-top: 2px;
+}
+:global(html:not(.light)) .groupLabel {
+  color: #71717A;
+  background: #18181B;
+  border-bottom-color: #3F3F46;
+}
+.groupLabel:first-child {
+  margin-top: 0;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,0,0,0.3);
+}
+
+.modal {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1);
+  padding: 20px;
+  max-width: 24rem;
+  width: 100%;
+  margin: 0 16px;
+}
+:global(html:not(.light)) .modal {
+  background: #18181B;
+}
+
+.modalTitle {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.modalText {
+  font-size: 13px;
+  color: #52525B;
+  margin-bottom: 16px;
+  word-break: break-all;
+}
+:global(html:not(.light)) .modalText {
+  color: #A1A1AA;
+}
+
+.modalDn {
+  font-family: monospace;
+  font-weight: 600;
+}
+
+.modalActions {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+}
+
+.cancelBtn {
+  padding: 6px 12px;
+  font-size: 13px;
+  border: 1px solid #A1A1AA;
+  border-radius: 4px;
+}
+:global(html:not(.light)) .cancelBtn {
+  border-color: #52525B;
+}
+.cancelBtn:hover {
+  background: #f9fafb;
+}
+:global(html:not(.light)) .cancelBtn:hover {
+  background: #3F3F46;
+}
+
+.confirmDeleteBtn {
+  padding: 6px 12px;
+  font-size: 13px;
+  background: #dc2626;
+  color: #fff;
+  border-radius: 4px;
+}
+.confirmDeleteBtn:hover {
+  background: #b91c1c;
+}
+
+.inputCell {
+  flex-shrink: 0;
+  padding: 6px 8px;
+  position: relative;
+}
+
+.valueCell {
+  flex: 1;
+  min-width: 0;
+  padding: 6px 8px;
+}

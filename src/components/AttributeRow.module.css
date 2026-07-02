@@ -1,0 +1,193 @@
+.row {
+  display: flex;
+  border-bottom: 1px solid #E4E4E7;
+}
+:global(html:not(.light)) .row {
+  border-bottom-color: #3F3F46;
+}
+.row:hover {
+  background: #f9fafb;
+}
+:global(html:not(.light)) .row:hover {
+  background: #18181B;
+}
+
+.rowEditing {
+  background: #fefce8;
+}
+:global(html:not(.light)) .rowEditing {
+  background: rgba(120, 53, 15, 0.2);
+}
+.rowEditing:hover {
+  background: #fefce8;
+}
+:global(html:not(.light)) .rowEditing:hover {
+  background: rgba(120, 53, 15, 0.2);
+}
+
+.attrName {
+  flex-shrink: 0;
+  padding: 6px 8px;
+  font-size: 13px;
+  user-select: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #71717A;
+}
+:global(html:not(.light)) .attrName {
+  color: #A1A1AA;
+}
+
+.attrNameReadOnly {
+  color: #A1A1AA;
+}
+:global(html:not(.light)) .attrNameReadOnly {
+  color: #71717A;
+}
+
+.valueCol {
+  flex: 1;
+  min-width: 0;
+  padding: 6px 8px;
+  font-size: 14px;
+  overflow: hidden;
+}
+
+.multiHeader {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.multiArrow {
+  font-size: 10px;
+  color: #A1A1AA;
+  user-select: none;
+}
+:global(html:not(.light)) .multiArrow {
+  color: #71717A;
+}
+
+.multiCount {
+  font-size: 10px;
+  color: #71717A;
+}
+:global(html:not(.light)) .multiCount {
+  color: #A1A1AA;
+}
+
+.multiValues {
+  margin-top: 2px;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.multiValue {
+  font-size: 13px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #3F3F46;
+}
+:global(html:not(.light)) .multiValue {
+  color: #A1A1AA;
+}
+
+.multiValueReadOnly {
+  color: #A1A1AA;
+  font-style: italic;
+}
+:global(html:not(.light)) .multiValueReadOnly {
+  color: #71717A;
+}
+
+.boolSelect {
+  border: 1px solid #A1A1AA;
+  border-radius: 4px;
+  padding: 2px 4px;
+  font-size: 13px;
+  background: #fff;
+}
+:global(html:not(.light)) .boolSelect {
+  border-color: #52525B;
+  background: #3F3F46;
+  color: #E4E4E7;
+}
+
+.editInput {
+  border: 1px solid #facc15;
+  border-radius: 4px;
+  padding: 2px 4px;
+  font-size: 14px;
+  width: 100%;
+  background: #fefce8;
+}
+:global(html:not(.light)) .editInput {
+  border-color: #eab308;
+  background: rgba(120, 53, 15, 0.4);
+  color: #E4E4E7;
+}
+
+.valueText {
+  cursor: default;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.valueTextExpanded {
+  word-break: break-all;
+  white-space: normal;
+  overflow: visible;
+}
+
+.valueTextReadOnly {
+  color: #A1A1AA;
+  font-style: italic;
+}
+:global(html:not(.light)) .valueTextReadOnly {
+  color: #71717A;
+}
+
+.contextMenu {
+  position: fixed;
+  z-index: 50;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+  padding: 4px 0;
+  min-width: 120px;
+}
+:global(html:not(.light)) .contextMenu {
+  background: #18181B;
+  border-color: #52525B;
+}
+
+.contextReadOnly {
+  padding: 6px 12px;
+  font-size: 13px;
+  color: #A1A1AA;
+  font-style: italic;
+}
+
+.contextDeleteBtn {
+  width: 100%;
+  text-align: left;
+  padding: 6px 12px;
+  font-size: 13px;
+  color: #dc2626;
+}
+:global(html:not(.light)) .contextDeleteBtn {
+  color: #f87171;
+}
+.contextDeleteBtn:hover {
+  background: #E4E4E7;
+}
+:global(html:not(.light)) .contextDeleteBtn:hover {
+  background: #3F3F46;
+}

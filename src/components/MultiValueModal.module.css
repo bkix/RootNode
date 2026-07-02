@@ -1,0 +1,164 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+}
+
+.modal {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  padding: 20px;
+  width: 360px;
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+:global(html:not(.light)) .modal {
+  background: #18181B;
+}
+
+.attrName {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.valuesBox {
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+:global(html:not(.light)) .valuesBox {
+  border-color: #3F3F46;
+}
+
+.valuesHeader {
+  padding: 6px 12px;
+  background: #f9fafb;
+  font-size: 13px;
+  font-weight: 600;
+  color: #71717A;
+  text-transform: uppercase;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+:global(html:not(.light)) .valuesHeader {
+  background: #3F3F46;
+  color: #A1A1AA;
+  border-color: #3F3F46;
+}
+
+.valueRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 12px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.valueRow:last-child {
+  border-bottom: none;
+}
+
+:global(html:not(.light)) .valueRow {
+  border-color: #3F3F46;
+}
+
+.removeBtn {
+  font-size: 13px;
+  color: #dc2626;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.removeBtn:hover {
+  text-decoration: underline;
+}
+
+:global(html:not(.light)) .removeBtn {
+  color: #f87171;
+}
+
+.addRow {
+  display: flex;
+  gap: 8px;
+}
+
+.addInput {
+  flex: 1;
+  border: 1px solid #A1A1AA;
+  border-radius: 4px;
+  padding: 4px 8px;
+  font-size: 13px;
+  background: #fff;
+  color: #1a1a1a;
+}
+
+:global(html:not(.light)) .addInput {
+  border-color: #52525B;
+  background: #3F3F46;
+  color: #E4E4E7;
+}
+
+.addBtn {
+  padding: 4px 12px;
+  background: #0F62FE;
+  color: #fff;
+  font-size: 13px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.addBtn:hover {
+  background: #0353E9;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.cancelBtn {
+  padding: 6px 12px;
+  border: 1px solid #A1A1AA;
+  border-radius: 4px;
+  font-size: 13px;
+  background: none;
+  cursor: pointer;
+}
+
+.cancelBtn:hover {
+  background: #f9fafb;
+}
+
+:global(html:not(.light)) .cancelBtn {
+  border-color: #52525B;
+}
+
+:global(html:not(.light)) .cancelBtn:hover {
+  background: #3F3F46;
+}
+
+.saveBtn {
+  padding: 6px 12px;
+  background: #0F62FE;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.saveBtn:hover {
+  background: #0353E9;
+}
