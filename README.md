@@ -2,6 +2,16 @@
 
 A native macOS LDAP browser and editor built with Tauri. Connect to Active Directory, OpenLDAP, or 389 Directory Server, browse the directory tree, search entries, and edit attributes — all from a clean, dark-mode-aware interface.
 
+# WARNING: This has been 100% Vibecoded with Claude
+
+It may can:
+- break your Heart
+- break your Bankaccount
+- break your merriage
+- break your Directory
+
+Consider beeing warnded. I am at no Level an experianced Software Author and I don't know what I'm doning!
+
 ## Features
 
 - Multi-server connections with saved profiles
