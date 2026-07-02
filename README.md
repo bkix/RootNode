@@ -10,7 +10,7 @@ It may can:
 - break your merriage
 - break your Directory
 
-Consider beeing warnded. I am at no Level an experianced Software Author and I don't know what I'm doning!
+Consider beeing warnded. I am at no Level an experianced Software Author and I don't know what I'm doing!
 
 ## Features
 
